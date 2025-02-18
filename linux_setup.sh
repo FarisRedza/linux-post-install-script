@@ -129,11 +129,11 @@ function install_packages {
 
 	local system_utilities="apt-file gpart"
 
-	local hardware_utilities="btrfs-progs exfatprogs"
+	local hardware_utilities="{btrfs-,exfat}progs"
 
 	local media_utilities=""
 
-	local development="python3-venv docker.io"
+	local development="python3-{venv,gi-cairo} docker.io"
 
 	local extras="fonts-ibm-plex"
 
